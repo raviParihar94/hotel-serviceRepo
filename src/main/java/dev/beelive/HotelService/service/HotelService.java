@@ -2,9 +2,9 @@ package dev.beelive.HotelService.service;
 
 import com.sun.istack.NotNull;
 import dev.beelive.HotelService.entities.Hotel;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-
 public interface HotelService {
 
     /*Create Hotel service*/
@@ -16,5 +16,7 @@ public interface HotelService {
     List<Hotel> getAllHotels();
 
     Hotel getHotelByID(@NotNull String hotelID);
+
+
 
 }

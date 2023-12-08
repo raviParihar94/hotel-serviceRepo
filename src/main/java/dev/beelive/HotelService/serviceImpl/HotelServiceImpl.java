@@ -5,10 +5,11 @@ import dev.beelive.HotelService.exceptions.ResourceNotFoundException;
 import dev.beelive.HotelService.repository.HotelRepository;
 import dev.beelive.HotelService.service.HotelService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
-
+@Service
 public class HotelServiceImpl implements HotelService {
 
     private final HotelRepository hotelRepository;
